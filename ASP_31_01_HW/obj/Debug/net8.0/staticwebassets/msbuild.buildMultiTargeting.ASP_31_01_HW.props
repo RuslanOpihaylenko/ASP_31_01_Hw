@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ASP_31_01_HW.props" />
+</Project>

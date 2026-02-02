@@ -1,0 +1,27 @@
+@ASP_31_01_HW_HostAddress = http://localhost:5194
+
+GET {{ASP_31_01_HW_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+GET {{ASP_31_01_HW_HostAddress}}/api/orders
+###
+GET {{ASP_31_01_HW_HostAddress}}/api/orders/5
+###
+GET {{ASP_31_01_HW_HostAddress}}/api/orders/search?number=First&minTotal=20.99
+###
+POST {{ASP_31_01_HW_HostAddress}}/api/orders
+Content-Type: application/json
+{
+  "number": "New Order",
+  "total": 99.99
+}
+###
+PUT {{ASP_31_01_HW_HostAddress}}/api/orders/4
+Content-Type: application/json
+{
+  "number": "Updated Order",
+  "total": 150.00
+}
+###
+DELETE {{ASP_31_01_HW_HostAddress}}/api/orders/4
