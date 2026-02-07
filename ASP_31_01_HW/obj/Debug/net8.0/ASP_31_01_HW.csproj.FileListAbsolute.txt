@@ -34,3 +34,4 @@ C:\Users\rysya\Desktop\ASP_31_01_HW\ASP_31_01_HW\obj\Debug\net8.0\refint\ASP_31_
 C:\Users\rysya\Desktop\ASP_31_01_HW\ASP_31_01_HW\obj\Debug\net8.0\ASP_31_01_HW.pdb
 C:\Users\rysya\Desktop\ASP_31_01_HW\ASP_31_01_HW\obj\Debug\net8.0\ASP_31_01_HW.genruntimeconfig.cache
 C:\Users\rysya\Desktop\ASP_31_01_HW\ASP_31_01_HW\obj\Debug\net8.0\ref\ASP_31_01_HW.dll
+C:\Users\rysya\Desktop\ASP_31_01_HW\ASP_31_01_HW\obj\Debug\net8.0\ASP_31_01_HW.sourcelink.json

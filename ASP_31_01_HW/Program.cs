@@ -1,5 +1,6 @@
 
 using ASP_31_01_HW.Controllers;
+using Microsoft.OpenApi.Models;
 
 namespace ASP_31_01_HW
 {
@@ -14,7 +15,15 @@ namespace ASP_31_01_HW
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
+            builder.Services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Title = "Orders API",
+                    Description = "API for creating!",
+                    Version = "v1"
+                });
+            });
             builder.Services.AddSingleton<OrdersStore>();
 
             var app = builder.Build();
@@ -23,7 +32,10 @@ namespace ASP_31_01_HW
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
-                app.UseSwaggerUI();
+                app.UseSwaggerUI(c =>
+                {
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Orders API v1");
+                });
             }
 
             app.UseHttpsRedirection();

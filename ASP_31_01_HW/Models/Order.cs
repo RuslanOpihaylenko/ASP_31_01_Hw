@@ -4,6 +4,9 @@ namespace ASP_31_01_HW.Models
 {
     public class Order
     {
+        /// <summary>
+        /// class for order
+        /// </summary>
         public int Id { get; set; }
         public string Number { get; set; } = string.Empty;
         public decimal Total { get; set; } 
